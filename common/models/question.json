@@ -1,0 +1,38 @@
+{
+  "name": "question",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer_one": {
+      "type": "string",
+      "required": true
+    },
+    "answer_two": {
+      "type": "string",
+      "required": true
+    },
+    "answer_three": {
+      "type": "string"
+    },
+    "answer_four": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "responses": {
+      "type": "hasMany",
+      "model": "response",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

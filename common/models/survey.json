@@ -1,0 +1,40 @@
+{
+  "name": "survey",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "survey_name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "published": {
+      "type": "boolean",
+      "default": false
+    },
+    "visitor_done": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "questions": {
+      "type": "hasMany",
+      "model": "question",
+      "foreignKey": ""
+    },
+    "responses": {
+      "type": "hasMany",
+      "model": "response",
+      "foreignKey": "",
+      "through": "question"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

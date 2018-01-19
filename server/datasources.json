@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "MongoDB": {
+    "host": "ds261917.mlab.com",
+    "port": 61917,
+    "database": "polli",
+    "password": "worldguy5",
+    "name": "MongoDB",
+    "user": "Kennaka5",
+    "connector": "mongodb"
+  }
+}

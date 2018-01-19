@@ -1,0 +1,26 @@
+{
+  "name": "response",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "answer_tally_1": {
+      "type": "number"
+    },
+    "answer_tally_2": {
+      "type": "number"
+    },
+    "answer_tally_3": {
+      "type": "number"
+    },
+    "answer_tally_4": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
