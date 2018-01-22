@@ -1,9 +1,9 @@
 const defaultState = {
-    username: "",
-    password: "",
+    address : "",
+    error: "",
   };
   
-  export default function searchReducer (state = defaultState, action) {
+  export default function visitorReducer (state = defaultState, action) {
     const { type, payload } = action;
   
     switch (type) {
@@ -13,7 +13,7 @@ const defaultState = {
       case 'GET_SEARCH_DATA_FULFILLED': {
         return {
           ...state,
-          login: payload
+          address: payload
         };
       }
       default: {
@@ -21,4 +21,3 @@ const defaultState = {
       }
     }
   }
-  
